@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+    </head>
+    <body>
+        <script>
+            // if both  are ture than result will true
+            document.write(1&1); // true
+            document.write(0&1); // false
+            document.write(1&0) //false
+            document.write(0&0) // false
+
+            // if atlest  one   is true  then  result  is true  
+            document.write(1|1);  // false
+            document.write(0|1);  //true
+            document.write(1|0); // true
+            document.write(0|0);  // false
+
+            //  if both are  opposite  then  result  is true
+             document.write(1^1); //  false
+             document.write(0^1);  // true
+             document.write(1^0); // true
+             document.write(0^0);  // false
+             // ternary  operator
+             //condition  ?  true block  : false blok
+              document.write ("<br>");
+              true? document.write("hello") : document.write("hi"); //hello
+
+              document.write("<br>");
+              false?  document.write("hello"): ("hi");  //hi
+
+              document.write("<br>");
+                9>8>7? document.write("true block"):("false block"); //false block
+
+                document.write("<br>")
+                9<8<7? document.write("true block"):("false block"); // true block
+            
+        </script>
+    </body>
+</html>

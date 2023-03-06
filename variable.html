@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> variable</title>
+
+    </head>
+    <body>
+        <script>
+            // variable 
+            //variable are use to sotre   the data
+            // in variable  we can  store  any  type  of data  
+            // we can decalre  variables in 4 ways
+            //1) var 
+            //2) let 
+            //3)  const 
+            //4 ) nathing
+            //let and cont introduced in  ES6  version 
+            // Rule 1. variable declration  should  contain  a-z ,A-Z ,0-9 
+            // Rule2. variable declration    should not   satr with  digits 
+            // digit type  reprsenting  "type of data "
+             // we have two type off data 
+             // 1primitive type  data 
+             // 2 non primitive type data
+              
+             // in perimitive type data strige the single value 
+             // non  peripitive type  data  we sre stroging  group  of  values
+              // primmitive datatype cassifiled  into 
+                  // 1.string 
+                  // 2.number 
+                  // 3.boolean 
+                  // 4.undefined 
+                  // 5. null
+                  // 6. bight (Es6)
+                  // 7 symbol  (ES2020)
+
+                  // non primitive   datatype  classified into 
+                  // arrays 
+                  // function 
+                  // object 
+                  /* 
+                    var/let /cont / variablename =value;
+                    */
+                   
+                // string 
+                // collation of  characters  called  as string  we will declare  string  3 ways 
+                // 1) " "(double  quotes)
+                //'   '( single quates)
+                //  ` ` (bakitck)
+                  //----- (backitck)  introduced  in ES6 as  version 
+                  //------(backitck) called  as tamplate  literal
+                  //------(backitck) used  to define  paragraphs
+                  var  sub =`agularjs`;
+                  var msg =`welcome to  ${sub }`;
+                  document.write(msg);
+                    document.write(`<br>`);
+                         //  welcome  to angular15
+                         //number  
+                         // five types  of number are possible 
+                         //decimal 
+                         //double 
+                         // hexadecimal 
+                         //octal 
+                         // octal
+                         //binary
+                         //hexdimal  will   prefix  with 0x
+                         //octal  will  prefix with 0o
+                         // binary  will  prefix  with 0b
+                         var  decimal =100;
+                         var double =100.12345;
+                         var hexadecimal=0x12ABC;
+                         var octal =0o123;
+                         var binary =0b0101;
+                         document.write(decimal,`<br>`,
+                                        double, `<br>`,
+                                        hexadecimal,`<br>`
+                                        octal,`<br>`
+                                        binary,`<br>`);
+                                        //100
+                                        //100.12345
+                                        //1194684
+                                        //  83
+                                        //10
+                                        // bolean 
+                                        // true 
+                                        //false 
+                                        var flag =true;
+                                        var flag =false ;
+                                        document.write(flag , `<br>`,flag1, `<br>`)
+                            // undefined 
+                            //undefined  is datatype 
+                            // variable  decared but  value  not assigent  called  as undrfined 
+                            var x;
+                            document.write(x);
+                            document.write(`<br>`);  // undefined       
+                            // null                             // null  is datatype 
+                            // null mackes  the unusend  variable   avalibality  to garbag  colltor 
+                            x=null;
+                            document.write(x);
+                            document.write(`<br>`); // null
+                         /*
+                         bigint  
+                         bigint  introduced  in E6version  
+                         bight  is data type 
+                         bibint  used strore the large  numbers
+                         bigint  number  suffiy  with 'n '
+                         bigint range of bigint  is "2^25-1" to  "-2^53-1"
+                         */
+                        var 
+                        large=123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789
+                        123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789
+                        123456789123456789123456789123456789123456789123456789123456789123456789123456789
+                        123456789123456789123456789123456789123456789123456789123456789123456789123456789n;
+                        documt.write(large);
+                        document.write(`<br>`);
+
+                        // symbol
+                        //symbol is  the datatype 
+                        // symbol datatype  introduced in ES2020
+                        //symbol data type used to  represnt  the data  uniquily 
+                        var r101=Symbol(100);
+                        var r101=Symbol(100);
+                         console. log (r101); // symbol (100)
+                         console.log (r102); // symbol (100)
+     <!---  array  ---->
+            //array  is collection of indexed  elements  call as array
+            //  index strats from 0
+            // we will  represet  array []
+            var  arr1=[10,20,30,40,50];
+            for (var i=0; i<arr1.lenth; i++){
+                document.write(arr1[i],`<br>`);
+            }
+            /*
+            10
+            20
+            30
+            40
+            */
+               var  arr3=[100,200,300,400,500]  
+               //for each
+               //ES6 version 
+               arr3.forEach(function(elemwnt,index)){
+                document.write(Element,"<br>");
+               };
+                /*
+                100
+                200
+                300
+                400
+                500
+                */   
+               //for..of loop
+               //ES6 Version 
+               var arr5=[1000,2000,3000,4000,5000]  
+               for(var a of arr5) {
+                document.write(a,`<br>`);
+               }   
+               /*
+               1000
+               2000
+               3000
+               4000
+               5000
+               */
+                 // json  used to tranfer  the data  over the network  
+                 // JSON  is light  Weight 
+                 //  object ----{}
+                 // arrays ----[]
+                 //date ------key and value pair 
+                 var  obje1={
+                    key1: "hello_1",
+                    ke2 : "hello_2",
+                    key3: "hello_3"
+                 };
+                 document .write (objet1.key1,obje2.key2,obje.key3,`<br`);
+                 //hello_1hello_2hello_3
+                 var products=[{p_id:111,p_name:`p_one`,p_cost:10000}
+                               {p_id:222,p_name:`P_two`,p_cost:20000}
+                               {p_id:333,p_name:`p_three`,P_cost:30000}
+                               {p_id:444,p_name:`p_four`,P_cost:40000}
+                               {p_id:555,P_name:`p_five`,p_cost:50000}]
+                               document.write (`<table boder ="1"
+                                                  align="center "
+                                                cellspacing="10px"
+                                                cellpading="10px" 
+                                                <tr>
+                                                    <th>p_id</th>
+                                                    <th>p_name</th>
+                                                    <th>p_cost</th>
+                                                    </tr>`);
+                                                    products.forEach(element,index){
+                                                    document.write(`<tr>
+                                                        <td>${element .p_id}</td>
+                                                        <td> $ {element.p_name}</td>
+                                                        <td>${element.p_cost}</td>
+                                                        </tr>`);
+                                                    });
+                                                    var employee=[{e_id:111,e_name:"e_one",e_sal:10000},
+                                                                    {e_id:222,e_name:"e_two",e_sal:20000},
+                                                                    {e_id:333,e_name:"e_three",e_sal:30000},
+                                                                     {e_id:444,e_name:"e_four",e_sal:40000},
+                                                                    {e_id:555,e_name:"e_five",e_sal:50000}];
+                                                            employees.forEach(`<table boder="1"
+                                                                                align="centar"
+                                                                                cellspacing="10px"
+                                                                                Cellpadding="10px"
+                                                                                <tr>
+                                                                                    <th> E_ID</th>
+                                                                                    <th> E_NAME</th>
+                                                                                    <th> E_SA</th>
+                                                                                    </tr>`);
+                                                    employee.forEach(funcation(element,index)){
+                                                        document.write(`<tr>
+                                                            <tr>${element.e_id}</tr>
+                                                            <td> ${element.e_name}
+                                                            <td> ${elemnent.e_sal}
+                                                                </tr>`);
+                                                            });
+                                                    document.write(`</table>`);                                              
+
+                                                                     
+                                                                     
+
+                                                        
+                                                    
+                                                    
+
+                    
+    </body>
+    </body>
+</html>

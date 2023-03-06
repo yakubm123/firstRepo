@@ -1,0 +1,25 @@
+.class_one{
+    background: linear-gradient(45deg,red,black);
+    box-shadow: opx opx 10px orange;
+
+}
+.class_two{
+  background: linear-gradient(9odeg,yellow,pink);
+  box-shadow: 0px 0px 10px blue;
+
+}
+.class_three{
+    background: linear-gradient(45deg,green ,skyblue);
+    box-shadow: opx 0px 10px red;
+
+}
+p{
+   border: 1px solid yellow;
+   width: 25%;
+   display: inline-block;
+   padding: 10px;
+   margin: 10px;
+   text-align: justify;
+   font-family: Comic Sans Ms;
+   color: white;
+}
